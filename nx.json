@@ -1,0 +1,21 @@
+{
+  "extends": "nx/presets/npm.json",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "cache": false,
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "lint": {
+      "cache": false
+    },
+    "test": {
+      "cache": false
+    },
+    "e2e": {
+      "cache": false
+    }
+  }
+}
